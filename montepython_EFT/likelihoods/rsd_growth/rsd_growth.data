@@ -1,0 +1,5 @@
+# RSD Gorwth 2021 (all growth except those incompatible with BOSS DR12 FS)
+# By Nils Schöneberg Apr 2021
+rsd_growth.data_directory      = data.path['data']
+rsd_growth.file                = 'growth_2021.txt'
+

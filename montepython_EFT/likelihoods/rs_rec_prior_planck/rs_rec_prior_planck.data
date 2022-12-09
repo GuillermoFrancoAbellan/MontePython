@@ -1,0 +1,9 @@
+# Values for Hubble Space Telescope
+# Updated to Riess et al. 2016 (arXiv:1604.01424)
+#rs_rec_prior_planck.h      = 0.7324
+#rs_rec_prior_planck.sigma  = 0.0174
+
+
+#1903.07603
+rs_rec_prior_planck.rs_rec = 144.7
+rs_rec_prior_planck.sigma  = 0.5

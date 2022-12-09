@@ -1,0 +1,44 @@
+#------Experiments to test (separated with commas)-----
+
+data.experiments=['bbn_omegab','bao_boss_dr12','bao_smallz_2014','eBOSS_DR14_Lya_combined','Pantheon','cosmic_clocks_2021']
+
+#------ Parameter list -------
+
+# data.parameters[class name] = [mean, min, max, 1-sigma, scale, role]
+# Cosmological parameters list
+data.parameters['omega_b']      = [  2.2377,   None, None,      0.015, 0.01, 'cosmo']
+data.parameters['omega_cdm']    = [ 0.12010,   None, None,     0.0013,    1, 'cosmo']
+data.parameters['H0']           = [      70,     50,   90,         1,     1, 'cosmo']
+data.parameters['b_clump']      = [    0.50,    0.0,  6.0,     0.05,      1, 'cosmo']
+
+# Nuisance parameter list, same call, except the name does not have to be a class name
+data.parameters['M']                 = [-19.02  , -19.5,  -18.5,      0.004,    1, 'nuisance']
+
+# Derived parameters
+data.parameters['Omega_Lambda']    = [1, None, None, 0,     1,   'derived']
+data.parameters['YHe']             = [1, None, None, 0,     1,   'derived']
+data.parameters['Omega_m']          = [0, None, None, 0,     1,   'derived']
+
+# Other cosmo parameters (fixed parameters, precision parameters, etc.)
+data.cosmo_arguments['sBBN file'] = data.path['cosmo']+'/bbn/sBBN.dat'
+
+# The base model features two massless
+# and one massive neutrino with m=0.06eV.
+# The settings below ensures that Neff=3.046
+# and m/omega = 93.14 eV
+data.cosmo_arguments['N_ur'] = 2.0328
+data.cosmo_arguments['N_ncdm'] = 1
+data.cosmo_arguments['m_ncdm'] = 0.06
+data.cosmo_arguments['T_ncdm'] = 0.71611
+
+# clumping parameters for Model 1
+data.cosmo_arguments['add_clumping'] = 'yes'
+data.cosmo_arguments['fV_2'] = 0.333333
+data.cosmo_arguments['Delta_1'] = 0.1
+data.cosmo_arguments['Delta_2'] = 1.0
+
+#------ Mcmc parameters ----
+
+data.N=10
+data.write_step=5
+

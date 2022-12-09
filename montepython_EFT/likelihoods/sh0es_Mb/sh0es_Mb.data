@@ -1,0 +1,5 @@
+# Values from the SH0ES collaboration
+# Updated to Riess et al. 2019 (arXiv:1903.07603)
+sh0es_Mb.Mb = -19.253
+sh0es_Mb.sigma = 0.027
+

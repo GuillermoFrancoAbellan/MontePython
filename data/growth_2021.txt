@@ -1,0 +1,24 @@
+# Growth rates f sigma8
+#Compatibility : BOSS DR12 1607.03155 spans 0.2 < z < 0.75
+
+# 6dFGS 1204.4725 (z<0.2)
+0.0067 0.423 0.055
+# MGS 1409.3238 (z<0.2) , < 3% angular overlap with 6dFGS (1803.01746)
+0.15  0.49 0.15
+# eBOSS DR14 1801.03062 (0.8 < z < 2.2)
+1.52  0.426 0.079
+
+## LRG 1310.2820 (incompatible DR12) 0.16 < z < 0.47
+## 0.3  0.49 0.09
+## GAMA 1309.5556 (incompatible DR12) z<0.5
+## 0.18  0.36 0.09
+## 0.38  0.44 0.06
+## WiggleZ 1204.3674 (incompatible DR12) 0.2<z<1
+## 0.44  0.413 0.08
+## 0.6  0.390 0.073
+## 0.733  0.437 0.072
+## Vipers 1612.05645 (incompatible DR12) 0.5 < z < 1.2
+## 0.6  0.55 0.12
+## 0.86  0.40 0.11
+## FastSound 1511.08083 (1.19 < z < 1.55), (incompatible DR14 quasars)
+## 1.4  0.482 0.116

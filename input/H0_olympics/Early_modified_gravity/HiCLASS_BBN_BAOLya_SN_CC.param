@@ -1,0 +1,66 @@
+#-----CLASS v2.7.2 (branch: , hash: )-----
+
+#------Experiments to test (separated with commas)-----
+
+data.experiments=['bbn_omegab','bao_boss_dr12','bao_smallz_2014','eBOSS_DR14_Lya_combined','Pantheon','cosmic_clocks_2021']
+
+#------ Parameter list -------
+
+# data.parameters[class name] = [mean, min, max, 1-sigma, scale, role]
+# - if min max irrelevant, put to None
+# - if fixed, put 1-sigma to 0
+# - if scale irrelevant, put to 1, otherwise to the appropriate factor
+# - role is either 'cosmo', 'nuisance' or 'derived'. You should put the derived
+# parameters at the end, and in case you are using the `-j fast` Cholesky
+# decomposition, you should order your nuisance parameters from slowest to
+# fastest.
+
+# Cosmological parameters list
+
+data.parameters['omega_b']      = [  2.2377,   None, None,      0.015, 0.01, 'cosmo']
+data.parameters['omega_cdm']    = [ 0.12010,   None, None,     0.0013,    1, 'cosmo']
+data.parameters['H0']            = [67.27,  50,80, 0.65,1,   'cosmo']
+
+data.parameters['parameters_smg__1']=[0.7,0.7,0.7,0,1,'cosmo']
+
+#Non-minimal coupling xi
+data.parameters['parameters_smg__2']=[0,0,1,0.1,1,'cosmo']
+data.parameters['parameters_smg__3']=[0.0,0.0,0.0,0.0,1,'cosmo']
+data.parameters['parameters_smg__4']=[0.0,0.0,0.0,0,1,'cosmo']
+
+
+#V_0 defined as in Eq.(9) of 2011.12934. In CLASS units the parameter \lambda in Eq.(9) simply becomes 10**(2*V_0)
+
+data.parameters['indexg_V']=[1.5,0.6,3.5,0.1,1,'cosmo']
+
+
+# Initial condition on the field. We kept the lower bound as different from zero, but for sigma=0.03 the energy injection is negligible
+data.parameters['thetai_scf']=[0.5,0.03,0.9,0.1,1,'cosmo']
+
+# Nuisance parameter list, same call, except the name does not have to be a class name
+
+data.parameters['M']	   = [-19.24, -19.5, -18.5, 0.01,  1, 'nuisance']
+
+# Derived parameters
+
+data.cosmo_arguments['Omega_smg'] = -1
+data.cosmo_arguments['Omega_Lambda'] = 0
+data.cosmo_arguments['Omega_fld'] = 0
+data.cosmo_arguments['gravity_model'] = 'brans dicke'
+
+#data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
+data.parameters['YHe']             = [1, None, None, 0,     1,   'derived']
+data.parameters['age']             = [0, None, None, 0,     1,   'derived']
+data.parameters['Omega_m']         = [0, None, None, 0,     1,   'derived']
+data.parameters['fEDE']            = [0, None, None, 0,     1,   'derived']
+data.parameters['log10z_c']        = [0, None, None, 0,     1,   'derived']
+
+
+# Other cosmo parameters (fixed parameters, precision parameters, etc.)
+data.cosmo_arguments['sBBN file'] = data.path['cosmo']+'/bbn/sBBN.dat'
+
+
+
+#------ Mcmc parameters ----
+data.N=20
+data.write_step=5

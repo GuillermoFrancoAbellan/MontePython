@@ -1,0 +1,5 @@
+## Values from DES KiDS1000, https://arxiv.org/abs/2007.15633
+
+KiDS1000_prior.S8      = 0.759
+KiDS1000_prior.sigma_up  = 0.024
+KiDS1000_prior.sigma_low  = 0.021

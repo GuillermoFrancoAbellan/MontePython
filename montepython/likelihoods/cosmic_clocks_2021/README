@@ -1,0 +1,4 @@
+##VP 08.04.21
+
+just add the file "Hz_2021.dat" to montepython_public/data/cosmic_clocks/
+and run with "cosmic_clocks_2021" as an extra likelihood.

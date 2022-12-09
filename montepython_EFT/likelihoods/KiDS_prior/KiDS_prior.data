@@ -1,0 +1,6 @@
+# Values from KIDS1000
+
+KiDS_prior.S8 = 0.766
+KiDS_prior.sigma_up = 0.020
+KiDS_prior.sigma_low = 0.014
+

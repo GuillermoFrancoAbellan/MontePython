@@ -1,0 +1,5 @@
+#https://arxiv.org/abs/2007.15633
+S8_KIDS1000.S8      = 0.759
+S8_KIDS1000.sigma_up  = 0.024
+S8_KIDS1000.sigma_low  = 0.021
+

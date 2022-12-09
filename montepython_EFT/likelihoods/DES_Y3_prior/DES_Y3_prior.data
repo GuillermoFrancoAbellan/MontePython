@@ -1,0 +1,6 @@
+# Values from DES Y3
+
+DES_Y3_prior.S8 = 0.775
+DES_Y3_prior.sigma_up = 0.026
+DES_Y3_prior.sigma_low = 0.024
+

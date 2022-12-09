@@ -1,0 +1,4 @@
+# Values for Hubble Space Telescope
+# Updated to Riess et al. 2020 (arXiv:2012.08534)
+SH0ES_19.h      = 0.7320
+SH0ES_19.sigma  = 0.0130

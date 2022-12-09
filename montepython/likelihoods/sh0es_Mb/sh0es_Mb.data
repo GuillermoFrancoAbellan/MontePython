@@ -1,0 +1,6 @@
+# Values from the SH0ES collaboration
+# Updated to D. Camarena & V.Matta (arXiv:2101.08641)
+sh0es_Mb.Mb     = -19.2435
+sh0es_Mb.sigma  = 0.0373
+
+

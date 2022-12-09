@@ -1,0 +1,21 @@
+# BOSS BAO+FS DR12
+# Alam et al. 2016 (arxiv:1607.03155)
+# By Thejs Brinckmann June 2017
+# NOTE 1: In this modified likelihood I omitted measurements of dM(rsfid/rs) and fsig8, and 
+# I completely neglected the cross correlation between measurements.
+bao_fs_boss_dr12_v2.z1=0.38
+bao_fs_boss_dr12_v2.z2=0.51
+bao_fs_boss_dr12_v2.z3=0.61
+# NOTE 2: I used these values of H(z) because these are the most similar to the data that appears in Fig. 2
+# of Vattis et al. (assuming rd=rd_fiducial), and in addition I could find their corresponding
+# sigmas in Alam et al. 2016. However, the values that appear in the original likelihood
+# are 81.5095, 90.4474 and 97.2556 (but for them I didn't know how to read the sigmas from
+# the covariance matrix) 
+bao_fs_boss_dr12_v2.H1_rd_by_rdfid_in_km_per_s_per_Mpc=81.1
+bao_fs_boss_dr12_v2.H2_rd_by_rdfid_in_km_per_s_per_Mpc=91.1
+bao_fs_boss_dr12_v2.H3_rd_by_rdfid_in_km_per_s_per_Mpc=99.4
+bao_fs_boss_dr12_v2.sigma1=2.2
+bao_fs_boss_dr12_v2.sigma2=2.1
+bao_fs_boss_dr12_v2.sigma3=2.2
+bao_fs_boss_dr12_v2.rs_rescale          = 1.
+bao_fs_boss_dr12_v2.rd_fid_in_Mpc       = 147.78

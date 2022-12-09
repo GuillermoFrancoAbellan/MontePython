@@ -1,0 +1,10 @@
+#Taken from arXiv: 1801.03062v1
+
+#effective redshift of the measurement
+BOSS_DR14_quasars.z=1.52
+#sound horizon at baryon drag for a fiducial cosmology of h=0.676, Omega_m=0.31 and omega_b=0.022
+BOSS_DR14_quasars.rd_fid_in_Mpc=147.78
+BOSS_DR14_quasars.rd_rescale=1.0
+#mean value and 1sigma of the measurement
+BOSS_DR14_quasars.H_rd_by_rdfid_in_km_per_s_per_Mpc=159.0
+BOSS_DR14_quasars.sigma=12.0
