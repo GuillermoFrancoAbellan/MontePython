@@ -543,6 +543,9 @@ def create_parser():
             symmetric likelihood assumption. In this case we need to
             switch to a one-sided derivative computation (instead of
             two-sided with mirroring), which has not been implemented.<++>
+        <**>--lklfactor<**> : 1.
+            <++>multiply likelihood difference by a factor<++> before evaluating new steps.
+            This is useful for minimizations using MCMC<++>
         <**>--silent<**> : None
             <++>silence the standard output<++> (useful when running on
             clusters)<++>
@@ -832,6 +835,9 @@ def create_parser():
     runparser.add_argument(
         '--Der-param-list', dest='derived_parameters',
         help=helpdict['Der-param-list'], type=str, default='', nargs='+')
+    # Factor likelihood differences
+    runparser.add_argument('--lklfactor', help=helpdict['lklfactor'],
+        type=float, default = 1.)
 
     ###############
     # Importance Sampling Arguments

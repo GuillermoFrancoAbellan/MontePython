@@ -801,7 +801,8 @@ def chain(cosmo, data, command_line):
             if (newloglike >= loglike):
                 alpha = 1.
             else:
-                alpha = np.exp(newloglike-loglike)
+              #  alpha = np.exp(newloglike-loglike)
+                alpha = np.exp(command_line.lklfactor*(newloglike-loglike))
         else:
             alpha = -1
 
