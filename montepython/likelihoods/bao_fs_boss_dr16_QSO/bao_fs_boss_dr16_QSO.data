@@ -1,0 +1,8 @@
+# BOSS BAO+FS DR16
+# Alam et al. 2016 (arxiv:1607.03155)
+# By Thejs Brinckmann June 2017
+bao_fs_boss_dr16_QSO.data_directory      = data.path['data']
+bao_fs_boss_dr16_QSO.data_file           = 'BAO-plus/sdss_DR16_QSO_FSBAO_DMDHfs8.txt'
+bao_fs_boss_dr16_QSO.cov_file            = 'BAO-plus/sdss_DR16_QSO_FSBAO_DMDHfs8_covtot.txt'
+bao_fs_boss_dr16_QSO.rs_rescale          = 1.
+bao_fs_boss_dr16_QSO.rd_fid_in_Mpc	     = 147.78

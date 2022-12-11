@@ -34,3 +34,7 @@ data/JLA/
 # Ignore the coverage reports
 .coverage
 htmlcov/
+
+#minimizer files
+run_minimizer.sh
+run_minimizer_vivian.sh
