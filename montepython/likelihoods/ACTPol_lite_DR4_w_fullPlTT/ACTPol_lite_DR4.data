@@ -1,0 +1,5 @@
+# ACTPol_lite_DR4 likelihood: modify the line below for your installation
+
+ACTPol_lite_DR4.data_directory    = data.path['data']
+#ACTPol_lite_DR4.data_directory    = data.path['/home/fabellan/pyactlike/pyactlike/data']
+
