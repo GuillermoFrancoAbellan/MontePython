@@ -108,7 +108,7 @@ def analyze(command_line):
         # Compute the mean, maximum of likelihood, 1-sigma variance for this
         # main folder. This will create the info.chain object, which contains
         # all the points computed stacked in one big array.
-        convergence(info)
+        convergence(info,command_line)
 
         # check if analyze() is called directly by the user, or by the mcmc loop during an updating phase
         try:
@@ -257,7 +257,7 @@ def prepare(files, info):
     return True
 
 
-def convergence(info):
+def convergence(info,command_line):
     """
     Compute convergence for the desired chains, using Gelman-Rubin diagnostic
 

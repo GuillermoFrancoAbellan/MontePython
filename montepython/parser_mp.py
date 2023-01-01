@@ -687,7 +687,7 @@ def create_parser():
             <++>calculate the covariant matrix when analyzing the chains. (default: False)<++>
             Warning: this will interfere with ongoing runs utilizing update mode (*OPT*) (flag)<++>
         <**>--store-files-NB<**> : bool
-            <++> Store new .txt and .paramname files which are convenient for analyzing chains with getdist notebook. (default: False)<++>
+            <++>Store new .txt and .paramname files which are convenient for analyzing chains with getdist notebook<++> (default: False)<++>
         <**>--gaussian-smoothing<**> : float
             <++>width of gaussian smoothing for plotting posteriors (default: 0.5)<++>,
             in units of bin size, increase for smoother data<++>
