@@ -686,6 +686,8 @@ def create_parser():
         <**>--want-covmat<**> : bool
             <++>calculate the covariant matrix when analyzing the chains. (default: False)<++>
             Warning: this will interfere with ongoing runs utilizing update mode (*OPT*) (flag)<++>
+        <**>--store-files-NB<**> : bool
+            <++> Store new .txt and .paramname files which are convenient for analyzing chains with getdist notebook. (default: False)<++>
         <**>--gaussian-smoothing<**> : float
             <++>width of gaussian smoothing for plotting posteriors (default: 0.5)<++>,
             in units of bin size, increase for smoother data<++>
@@ -990,6 +992,9 @@ def create_parser():
     # -- calculate the covariant matrix when analyzing the chains
     infoparser.add_argument('--want-covmat', help=helpdict['want-covmat'],
                             dest='want_covmat', action='store_true')
+    # -- Store new .txt and .paramname files which are convenient for analyzing chains with getdist notebook
+    infoparser.add_argument('--store-files-NB', help=helpdict['store-files-NB'],
+                            dest='store_files_NB', action='store_true')
     # -------------------------------------
     # Further customization
     # -- fontsize of plots (defaulting to 16)

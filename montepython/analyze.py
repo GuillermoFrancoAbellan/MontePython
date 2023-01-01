@@ -283,15 +283,15 @@ def convergence(info):
     #print('--> Removing burn-in')
     spam = remove_bad_points(info)
 
-    #GFA, lines added by Pierre Zhang to ease readability with getdist notebooks
-    from shutil import copyfile
-    try:
-        copyfile('%s.paramnames'%info.files[0][:-6], os.path.join(info.folder, '%s.paramnames')%info.basename)
-    except:
-        copyfile('%s.paramnames'%info.files[0][:-7], os.path.join(info.folder, '%s.paramnames')%info.basename)
-    cleanchain = np.vstack(spam)
-    np.savetxt(os.path.join(info.folder, '%s_1.txt')%info.basename, cleanchain, fmt = '%.6e')
-    #GFA, end of extra lines
+    if command_line.store_files_NB: #GFA, lines added by P. Zhang to ease readability with getdist notebooks
+        from shutil import copyfile
+        try:
+            copyfile('%s.paramnames'%info.files[0][:-6], os.path.join(info.folder, '%s.paramnames')%info.basename)
+        except:
+            copyfile('%s.paramnames'%info.files[0][:-7], os.path.join(info.folder, '%s.paramnames')%info.basename)
+        cleanchain = np.vstack(spam)
+        np.savetxt(os.path.join(info.folder, '%s_1.txt')%info.basename, cleanchain, fmt = '%.6e')
+
 
     # Re-Map the given parameters
     info.remap_parameters(spam)
